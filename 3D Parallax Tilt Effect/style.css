@@ -14,11 +14,13 @@
 .container{
     height: 100vh;
     transform-style: preserve-3d;
+    perspective: 600px;
 }
 .mouse-movement-area{
-    background: royalblue;
+    /* background: royalblue; */
     width: 50vw;
-    height: 60vh;
+    height: 70vh;
+    transform-style: preserve-3d;
 }
 .box{
     width: 500px;
@@ -36,6 +38,7 @@
     background-color: cadetblue;
     background: url(./background.jpg);
     background-size: cover;
+    transform-style: preserve-3d;
 }
 .content-box{
     background: rgb(228, 228, 228);
@@ -46,7 +49,8 @@
     right: 50px;
     transform: translateZ(20px) scaleY(0);
     transform-origin: top;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 250ms ease-in-out;
+    transform-style: preserve-3d;
 }
 .box:hover .content-box{
     transform: translateZ(20px) scaleY(1);
