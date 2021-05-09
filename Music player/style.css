@@ -51,14 +51,14 @@ body {
 .music-container.play .image-container img {
   animation-play-state: running;
 }
-/* @keyframes rotate {
+@keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
   }
-} */
+}
 
 .nav {
   display: flex;
