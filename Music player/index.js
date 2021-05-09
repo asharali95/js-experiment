@@ -15,7 +15,6 @@ var loadSong = (song) => {
   title.innerText = song;
   audio.src = `./song/${title.innerText}.mp3`;
   cover.src = `./images/${title.innerText}.PNG`;
-  // console.log(cover.src);
 };
 
 loadSong(songs[songIndex]);
@@ -57,7 +56,6 @@ var setProgress = (e) => {
   const width = e.target.clientWidth;
   const clickX = e.offsetX;
   var duration = audio.duration;
-  console.log((clickX / width) * duration);
   audio.currentTime = (clickX / width) * duration;
 };
 //Event listeners
@@ -72,4 +70,4 @@ prevBtn.addEventListener("click", prevSong);
 nexBtn.addEventListener("click", nextSong);
 audio.addEventListener("timeupdate", updateProgress);
 progressContainer.addEventListener("click", setProgress);
-audio.addEventListener("ended", nextSong)
+audio.addEventListener("ended", nextSong);
