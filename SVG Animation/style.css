@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container {
+  width: 500px;
+}
+
+.signature {
+  stroke-dashoffset: 3139;
+  stroke-dasharray: 3139;
+  animation: sign 10s ease;
+  animation-fill-mode: linear forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
